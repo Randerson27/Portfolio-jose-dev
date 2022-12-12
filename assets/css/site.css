@@ -209,6 +209,18 @@ h3::after{
 .about .aboutWrapper .box-about .boxAboutText .titleAboutText h2    {
     margin-bottom: 30px;
 }
+.about .aboutWrapper .box-about .boxAboutText .btnDownload{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.about .aboutWrapper .box-about .boxAboutText .btnDownload button{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: unset;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 .card{
     position: relative;
@@ -455,6 +467,7 @@ align-items: center;
         padding: 0 20px;
         text-align: center;
     }
+  
     .about .aboutWrapper .box-about .boxAboutImg{
         border: none;
     }
