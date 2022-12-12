@@ -1,0 +1,476 @@
+@font-face{
+    font-family: "futura md bt";
+    src: url("../../assets/font/Futura\ Bold\ BT.ttf");
+    /* src: url("../../assets/font/Baby\ Angelonia.ttf"); */
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'futura md bt';
+    color: white;
+}
+:root{
+    --green:#00FF7F;
+    --lightBlack:#0a0a0a;
+}
+body{
+    background: var(--lightBlack);
+}
+
+:root{
+    --black:#131414;
+}
+
+.containerFull{
+    width: 100%;
+}
+.containerStatic{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/******** HEADER *********/
+.header{
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+}
+.topHeader{
+    width: 100%;
+    background-color: black;
+    border-bottom: 3px solid #0a0a0a;
+}
+.topHeader .topHeaderWrapper{
+    width: 100%;
+    height: 100px;
+}
+.topHeader .topHeaderWrapper .navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.topHeader .topHeaderWrapper .navBar .fullName a{
+    font-family: 'futura md bt';
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--green);
+}
+.topHeader .topHeaderWrapper .menu{
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+}
+.topHeader .topHeaderWrapper .menu a:hover{
+   text-decoration: underline;
+}
+
+.mainFull{
+    height: 100vh;
+}
+.mainFull .contentMain{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainFull .contentMain .contentMainWrapper{
+    width: 100%;
+    display: flex;
+
+}
+.mainFull .contentMain .contentMainWrapper .boxContent{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+}
+.mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion{
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect{
+    width: 100%;
+    max-width: 475px;
+    height: 100%;
+    max-height: 300px;
+}
+.mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect strong{
+    color: #00FF7F;
+}
+.mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect .btnContacts{
+    display: flex;
+    margin-top: 25px;
+}
+.mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect .btnContacts .linkedin{
+    margin-right: 50px;
+    border: 1px solid #6A5ACD;
+    padding: 20px;
+    border-radius: 10px;
+}
+.mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect .btnContacts .github{
+    border: 1px solid #800080;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mainFull .contentMain .contentMainWrapper .boxContentImage{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+}
+.mainFull .contentMain .contentMainWrapper .boxContentImage .boxImage{
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainFull .contentMain .contentMainWrapper .boxContentImage .boxImage .boxWrapper img{
+    width: 100%;
+    max-width: 500px;
+    
+    transition: transform 1s;
+    transform: translateX(0) scale(0.9);
+}
+.mainFull .contentMain .contentMainWrapper .boxContentImage .boxImage .boxWrapper img:hover,
+.mainFull .contentMain .contentMainWrapper .boxContentImage .boxImage .boxWrapper img:focus{
+    transform: translateX(10px) scale(1.2);
+}
+
+.buttonAnchor{
+    width: 100%;
+}
+/****** efeito de digitação ******/
+h3{
+    font-size: 40px;
+}
+h3::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%,100% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }    
+}
+/****** end efeito de digitação ******/
+/******** END HEADER ********/
+
+/******** ABOUT ME **********/
+.about{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.about .aboutWrapper{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    /* border: 1px solid white; */
+}
+.about .aboutWrapper .box-about{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.about .aboutWrapper .box-about .boxAboutImg{
+    width: 100%;
+    max-width: 400px;
+    border-right: 2px solid var(--green);
+}
+
+.about .aboutWrapper .box-about .boxAboutText{
+    width: 100%;
+    max-width: 700px;
+}
+.about .aboutWrapper .box-about .boxAboutText .titleAboutText h1,
+.about .aboutWrapper .box-about .boxAboutText .titleAboutText h2    {
+    margin-bottom: 30px;
+}
+
+.card{
+    position: relative;
+    height: 348px;
+    width: 320px;
+    margin: 5px;
+    perspective: 1000px;
+}
+.card:hover .flip{
+    transform: rotateY(180deg);
+}
+.card .flip{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.front-card, .back-card{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back-card{
+    transform: rotateY(180deg);
+    width: 320px;
+    background-color: var(--lightBlack);
+}
+.back-card .back{
+    border: 1px solid var(--green);
+    width: 280px;
+    height: 260px;
+    padding: 20px;
+}
+.back .name,
+.back .age,
+.back .email{
+    margin-bottom: 20px;
+}
+.back .name p,
+.back .age p,
+.back .email p{
+    color: var(--green);
+}
+.front-card img{
+    width: 320px;
+    height: 300px;
+}
+/***** END ABOUT ME **********/
+
+/***** GALERIA ********/
+.projetos{
+    width: 100%;
+    height: auto;
+}
+.projetos .projetosWrapper{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid green; */
+    margin: 50px 0 50px 0;
+}
+.projetos .projetosWrapper .titleGallery{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+}
+.projetos .projetosWrapper .column-one{
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .projetos .projetosWrapper .column-one .boxOne,
+.projetos .projetosWrapper .column-one .boxTwo,
+.projetos .projetosWrapper .column-one .boxThree{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border: 1px solid red;
+} */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper .swiper-wrapper{
+    height: auto;
+}
+/**** slide *****/
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+padding-bottom: 50px;
+/* background: #fff; */
+
+
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+.swiper-slide .boxSlide{
+    width: 260px;
+    height: 100%;
+    border-radius: 11px;
+}
+.swiper-slide .boxSlide .descriptionImg p{
+    color: var(--green);
+}
+.swiper-slide .boxSlide .descriptionImg p,
+.swiper-slide .boxSlide .descriptionImg h2{
+    margin-top: 20px;
+}
+.swiper-slide img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px black;
+}
+.swiper-pagination-bullet{
+    background: white!important;
+}
+.swiper-pagination-bullet-active{
+    background: var(--green)!important;
+}
+/**** end slide *****/
+/***** END GALERIA ********/
+
+/***** FOOTER *****/
+.footer{
+    width: 100%;
+    /* height: 450px; */
+    background-color: black;
+
+}
+.footer .footerWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.footer .footerWrapper .boxFooterOne .boxFooterImg{
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+}
+.footer .footerWrapper .boxFooterOne .boxFooterImg img{
+    width: 100%;
+    border-radius: 150px;
+    height: 100%;
+}
+.footer .footerWrapper .titleFooter{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer .footerWrapper .titleFooter a h3{
+    font-family: 'futura md bt';
+    font-size: 30px;
+    color: var(--green);
+}
+.footer .footerWrapper .boxFooterTwo ul li,
+.footer .footerWrapper .boxFooterThree ul li{
+    padding-top: 30px;
+}
+.footer .footerWrapper .boxFooterTwo ul li a:hover,
+.footer .footerWrapper .boxFooterThree ul li a:hover{
+    text-decoration: underline;
+}
+.footer .footerWrapper .boxFooterThree ul li a i{
+    margin-right: 10px;
+}
+/***** END FOOTER *****/
+
+/****** BOTÃO FLUTUANTE **********/
+.botaoFlutuante{
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    border: 3px solid var(--lightBlack);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: var(--green);
+}
+.botaoFlutuante .btnWhats{
+    display: flex;
+}
+.botaoFlutuante .btnWhats .btnText{
+    margin-right: 10px;
+}
+.botaoFlutuante .btnWhats .btnText h2{
+   color: var(--lightBlack);
+}
+.botaoFlutuante .btnWhats .btnIcon img{
+   width: 30px;
+}
+/****** END BOTÃO FLUTUANTE **********/
+
+@media (max-width: 860px){
+    .topHeader .topHeaderWrapper .navBar{
+        padding: 0 20px;
+    }
+    .topHeader .topHeaderWrapper .navBar .fullName{
+        margin-right: 20px;
+    }
+    .topHeader .topHeaderWrapper .navBar .fullName a{
+        font-size: 20px;
+    }
+    .topHeader .topHeaderWrapper .menu .nome a{
+        font-size: 16px;
+    }
+    .mainFull .contentMain .contentMainWrapper{
+        flex-direction: column-reverse;
+        height: 100vh;
+        padding: 20px;
+    }
+    .mainFull .contentMain .contentMainWrapper .boxContent{
+        height: 455px;
+    }
+    .mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect .box-text h3{
+        font-size: 35px;
+    }
+    .mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect .btnContacts{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about .aboutWrapper .box-about{
+        display: block;
+    }
+    .about .aboutWrapper .box-about .boxAboutText .titleAboutText,
+    .about .aboutWrapper .box-about .boxAboutText p{
+        padding: 0 20px;
+        text-align: center;
+    }
+    .about .aboutWrapper .box-about .boxAboutImg{
+        border: none;
+    }
+    .card{
+        margin-left: 10%;
+    }
+    .footer .footerWrapper{
+        display: block;
+        padding: 30px 20px;
+    }
+    .footer .footerWrapper .boxFooterOne,
+    .footer .footerWrapper .boxFooterTwo,
+    .footer .footerWrapper .boxFooterThree{
+        margin-bottom: 20px;
+    }
+    .footer .footerWrapper .titleFooter{
+        justify-content:flex-start;
+    }
+}
