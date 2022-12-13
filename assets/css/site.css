@@ -383,8 +383,7 @@ align-items: center;
     display: flex;
     justify-content: center;
 }
-.footer .footerWrapper .titleFooter a h3{
-    font-family: 'futura md bt';
+.footer .footerWrapper .titleFooter a h2{
     font-size: 30px;
     color: var(--green);
 }
