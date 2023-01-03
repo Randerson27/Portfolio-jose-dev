@@ -12,7 +12,7 @@
 }
 :root{
     --green:#00FF7F;
-    --lightBlack:#0a0a0a;
+    --lightBlack:#0e0e0e;
 }
 body{
     background: var(--lightBlack);
@@ -80,6 +80,7 @@ body{
 .mainFull .contentMain .contentMainWrapper{
     width: 100%;
     display: flex;
+    margin-top: 100px;
 }
 .mainFull .contentMain .contentMainWrapper .boxContent{
     width: 100%;
@@ -191,12 +192,15 @@ h3::after{
 .about .aboutWrapper .box-about .boxAboutImg{
     width: 100%;
     max-width: 400px;
-    border-right: 2px solid var(--green);
+    border-right: 2px solid red;
 }
 
 .about .aboutWrapper .box-about .boxAboutText{
     width: 100%;
     max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .about .aboutWrapper .box-about .boxAboutText .titleAboutText h1,
 .about .aboutWrapper .box-about .boxAboutText .titleAboutText h2    {
@@ -211,8 +215,14 @@ h3::after{
     border: 1px solid white;
     padding: 10px;
     background-color: unset;
+    display: flex;
+    align-items: center;
     border-radius: 10px;
     cursor: pointer;
+}
+.about .aboutWrapper .box-about .boxAboutText .btnDownload button i{
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 .card{
@@ -260,6 +270,50 @@ h3::after{
     object-fit: cover;
 }
 /***** END ABOUT ME **********/
+
+/***** EXPERIÊNCIAS *********/
+.experiencias{
+    border-bottom: 5px solid black;
+}
+.exp{
+    padding: 30px 0;
+}
+.exp .expWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.exp .expWrapper .titleExp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 2px solid red;
+    max-width: 400px;
+    height: 355px;
+}
+.exp .expWrapper .titleExp h2{
+    font-size: 40px;
+    color: var(--green);
+}
+.exp .expWrapper .contentExp{
+    width: 100%;
+    max-width: 800px;
+    margin-left: 40px;
+}
+.exp .expWrapper .contentExp ul li{
+padding-bottom: 25px;
+    list-style: disc;
+}
+.exp .expWrapper .contentExp ul li::marker{
+
+    color: var(--green);
+}
+/* .exp .expWrapper .contentExp .boxExpOne,
+.exp .expWrapper .contentExp .boxExpTwo,
+.exp .expWrapper .contentExp .boxExpThree{
+    padding: 15px 0;
+} */
+/***** END EXPERIÊNCIAS *********/
 
 /***** GALERIA ********/
 .projetos{
@@ -439,10 +493,13 @@ align-items: center;
     .topHeader .topHeaderWrapper .menu .nome a{
         font-size: 16px;
     }
+    .mainFull{
+        height: auto;
+    }
     .mainFull .contentMain .contentMainWrapper{
         flex-direction: column-reverse;
         height: 100vh;
-        padding: 20px;
+        padding:0 20px;
     }
     .mainFull .contentMain .contentMainWrapper .boxContent{
         height: 455px;
@@ -454,8 +511,24 @@ align-items: center;
         display: flex;
         justify-content: space-between;
     }
+    .mainFull .contentMain .contentMainWrapper .boxContentImage{
+        height: auto;
+    }
+    .mainFull .contentMain .contentMainWrapper .boxContentImage .boxImage .boxWrapper img{
+        max-width: 365px;
+    }
+    .mainFull .contentMain .contentMainWrapper .boxContentImage .boxImage .boxWrapper img:hover, 
+    .mainFull .contentMain .contentMainWrapper .boxContentImage .boxImage .boxWrapper img:focus,
+    .mainFull .contentMain .contentMainWrapper .boxContentImage .boxImage .boxWrapper img{
+        transition: none;
+        transform: none;
+    }
     .about .aboutWrapper .box-about{
-        display: block;
+        /* display: block; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .about .aboutWrapper .box-about .boxAboutText .titleAboutText,
     .about .aboutWrapper .box-about .boxAboutText p{
@@ -465,10 +538,28 @@ align-items: center;
   
     .about .aboutWrapper .box-about .boxAboutImg{
         border: none;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
     }
-    .card{
+    .exp{
+        padding: 30px;
+    }
+    .exp .expWrapper{
+        display: block;
+    }
+    .exp .expWrapper .titleExp{
+        border-right:none;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .exp .expWrapper .contentExp{
+        margin-left: 0;
+    }
+    /* .card{
         margin-left: 10%;
-    }
+    } */
     .footer .footerWrapper{
         display: block;
         padding: 30px 20px;
