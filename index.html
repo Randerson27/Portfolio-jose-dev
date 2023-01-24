@@ -22,7 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    
+   
     <title>José</title>
 </head>
 <body>
@@ -191,7 +191,7 @@
                             <ul>
                                 <li>
                                     <h1>Programação</h2>
-                                    <p>Tenho conhecimentos em HTML, CSS, JavaScript, Laravel e Php para criação de sites, também gosto de usar bibliotecas. Conhecimentos adquiridos após minha última experiência como programador júnior.</p>
+                                    <p>Tenho conhecimentos em HTML, CSS, JavaScript, Laravel e PHP para criação de sites, também gosto de usar bibliotecas. Conhecimentos adquiridos após minha última experiência como programador júnior.</p>
                                 </li>
                                 <li>
                                     <h1>Banco de Dados</h2>
@@ -231,6 +231,49 @@
                          <!-- Swiper -->
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="boxSlide">
+                                        <div class="imageSlide">
+                                            <a data-fancybox="gallery" href="assets/img/projeto-site-finans-jose-portfolio.png" >
+                                                <img src="assets/img/projeto-site-finans-jose-portfolio.png" alt="projeto-site-finans-jose-portfolio">
+                                            </a>
+                                        </div> 
+                                        <div class="descriptionImg">
+                                            <h2>Site de Finans</h2>
+                                            <p>Projeto acadêmico feito através do curso de Desenvolvimento Web da Udemy</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="boxSlide">
+                                        <div class="imageSlide">
+                                            <a data-fancybox="gallery" href="assets/img/projeto-museu-nacional-jose-portfolio.png" >
+                                                <img src="assets/img/projeto-museu-nacional-jose-portfolio.png" alt="projeto-museu-nacional-jose-portfolio">
+                                            </a>
+                                        </div> 
+                                        <div class="descriptionImg">
+                                            <h2>Museu Nacional</h2>
+                                            <p>Projeto acadêmico, site do museu nacional desenvolvido através do curso de Desenvolvimento Web da Udemy</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="boxSlide">
+                                        <div class="imageSlide">
+                                            <a data-fancybox="gallery" href="assets/img/projeto-one-piece-portfolio-jose.png" >
+                                                <img src="assets/img/projeto-one-piece-portfolio-jose.png" alt="projeto-one-piece-portfolio-jose">
+                                            </a>
+                                        </div> 
+                                        <div class="descriptionImg">
+                                            <h2>Site Alabasta.com</h2>
+                                            <p>Projeto desenvolvido por mim, construido com HTML CSS e Bootstrap</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="swiper-slide">
                                     <div class="boxSlide">
                                         <div class="imageSlide">
@@ -240,7 +283,7 @@
                                         </div> 
                                         <div class="descriptionImg">
                                             <h2>LandPage Marmitinha</h2>
-                                            <p>Projeto feito no Laravel apenas com HTML e CSS.</p>
+                                            <p>Projeto profissional, feito no Laravel apenas com HTML e CSS.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +297,7 @@
                                         </div> 
                                         <div class="descriptionImg">
                                             <h2>Site B2sObras</h2>
-                                            <p>Site criado em HTML, CSS, JS e algumas bibliotecas</p>
+                                            <p>Projeto profissional, criado no Laravel usando HTML, CSS, JS, algumas bibliotecas e uma area ADM pronta</p>
                                         </div>
                                     </div>
                                 </div>
@@ -268,7 +311,7 @@
                                         </div> 
                                         <div class="descriptionImg">
                                             <h2>Site Vet Domus</h2>
-                                            <p>Site criado em HTML, CSS, JS e algumas bibliotecas</p>
+                                            <p>Projeto profissional desenvolvido no Laravel, usando HTML, CSS, JS, bibliotecas e uma area ADM pronta.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -287,33 +330,6 @@
                                     </div>
                                 </div>
                                 
-                                <div class="swiper-slide">
-                                    <div class="boxSlide">
-                                        <div class="imageSlide">
-                                            <a data-fancybox="gallery" href="assets/img/carregando-em-breve-jose-portfolio.png" target="blank">
-                                                <img src="assets/img/carregando-em-breve-jose-portfolio.png" alt="carregando-em-breve-jose-portfolio">
-                                            </a>
-                                        </div> 
-                                        <div class="descriptionImg">
-                                            <h2>Em breve</h2>
-                                            <p>...</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="boxSlide">
-                                        <div class="imageSlide">
-                                            <a data-fancybox="gallery" href="assets/img/carregando-em-breve-jose-portfolio.png" target="blank">
-                                                <img src="assets/img/carregando-em-breve-jose-portfolio.png" alt="carregando-em-breve-jose-portfolio">
-                                            </a>
-                                        </div> 
-                                        <div class="descriptionImg">
-                                            <h2>Em breve</h2>
-                                            <p>...</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -435,6 +451,44 @@
     <script>
 
         
+        // window.addEventListener('load',function(){
+        //     let cardImage = setInterval(function () {
+        //         let card = document.querySelector('.flip');
+        //         card.classList.add('flipTime');
+        //         // console.log('ok')
+        //     }, 5000);
+
+
+        //     setTimeout(function () {
+        //         let card = document.querySelector('.flip');
+        //         card.classList.remove('flipTime');
+        //     }, 6000);
+
+        //     // setTimeout(function(){
+        //     //     clearInterval(cardImage)
+        //     // },20000)
+        // });
+
+        // window.addEventListener('load',function(){
+        //     function setInterval(() => {
+        //         let card = document.querySelector('.flip');
+        //         card.classList.add('flipTime');
+        //     }, 2000);
+        // });
+
+        // window.addEventListener('load',function(){
+        // function greet() {
+        //     let card = document.querySelector(".flip");
+        //     card.classList.add('flipTime');
+        // }
+
+        // setInterval(greet, 2000);
+        
+        
+
+        // setInterval(function () {
+        //    console.log('ok')
+        // }, 2000);
     </script>
 
 </body>
