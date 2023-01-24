@@ -224,7 +224,10 @@ h3::after{
     font-size: 20px;
     margin-right: 10px;
 }
-
+.flipTime{
+    transform: rotateY(180deg);
+}
+    
 .card{
     position: relative;
     height: 300px;
