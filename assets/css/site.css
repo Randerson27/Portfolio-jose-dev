@@ -581,4 +581,7 @@ align-items: center;
     .footer .footerWrapper .titleFooter{
         justify-content:flex-start;
     }
+    .swiper-slide{
+        display: flex !important;
+    }
 }
