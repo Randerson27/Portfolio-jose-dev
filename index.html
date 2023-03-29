@@ -442,6 +442,19 @@
     <script src="assets/js/site.js"></script>
     <!-- API de scroll -->
     <script src="assets/js/scrollReveal.js"></script>
+    
+    <script>
+        const desiredElement = document.getElementById('nav-top'); // elemento alvo
+        const pixelsAmount = '150'; // Quantidade de pixels a contar do TOP até definir a cor
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > pixelsAmount) {
+                desiredElement.classList.add('changeStyle'); // adiciona classe "changeColor"
+            } else {
+            desiredElement.classList.remove('changeStyle'); // remove classe "changeColor"
+            }
+        });
+    </script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -465,19 +478,6 @@
             },
       });
    
-    </script>
-
-    <script>
-        const desiredElement = document.getElementById('nav-top'); // elemento alvo
-        const pixelsAmount = '150'; // Quantidade de pixels a contar do TOP até definir a cor
-
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > pixelsAmount) {
-                desiredElement.classList.add('changeStyle'); // adiciona classe "changeColor"
-            } else {
-            desiredElement.classList.remove('changeStyle'); // remove classe "changeColor"
-            }
-        });
     </script>
 </body>
 </html>
