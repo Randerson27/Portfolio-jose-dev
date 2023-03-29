@@ -269,16 +269,19 @@ h3::after{
 }
 .back .name,
 .back .age,
+.back .city,
 .back .email{
     margin-bottom: 20px;
 }
 .back .name h2,
 .back .age h2,
+.back .city h2,
 .back .email h2{
     text-shadow: 0px 0px 15px white;
 }
 .back .name p,
 .back .age p,
+.back .city p,
 .back .email p{
     color: var(--green);
     text-shadow: 0px 0px 15px var(--green);
