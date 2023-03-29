@@ -57,6 +57,7 @@ body{
     font-size: 30px;
     font-weight: bold;
     color: var(--green);
+    text-shadow: 0px 0px 30px var(--green);
 }
 .topHeader .topHeaderWrapper .menu{
     display: flex;
@@ -112,6 +113,7 @@ body{
 .mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect .btnContacts .linkedin{
     margin-right: 50px;
     border: 1px solid #6A5ACD;
+    box-shadow: 0px 0px 20px #6A5ACD;
     padding: 20px;
     border-radius: 10px;
 }
@@ -119,6 +121,7 @@ body{
     border: 1px solid #800080;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px #800080;
 }
 
 .mainFull .contentMain .contentMainWrapper .boxContentImage{
@@ -214,7 +217,8 @@ h3::after{
 .about .aboutWrapper .box-about .boxAboutText .btnDownload button{
     border: 1px solid white;
     padding: 10px;
-    background-color: unset;
+    background-color: var(--green);
+    box-shadow: 0px 0px 15px var(--green);
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -223,6 +227,10 @@ h3::after{
 .about .aboutWrapper .box-about .boxAboutText .btnDownload button i{
     font-size: 20px;
     margin-right: 10px;
+    color: var(--black);
+}
+.about .aboutWrapper .box-about .boxAboutText .btnDownload button h2{
+    color: var(--black);
 }
 .flipTime{
     transform: rotateY(180deg);
@@ -252,7 +260,9 @@ h3::after{
     background-color: var(--lightBlack);
 }
 .back-card .back{
+    border-radius: 15px;
     border: 1px solid var(--green);
+    box-shadow: 0px 10px 10px var(--green);
     width: 280px;
     height: 260px;
     padding: 20px;
@@ -262,15 +272,24 @@ h3::after{
 .back .email{
     margin-bottom: 20px;
 }
+.back .name h2,
+.back .age h2,
+.back .email h2{
+    text-shadow: 0px 0px 15px white;
+}
 .back .name p,
 .back .age p,
 .back .email p{
     color: var(--green);
+    text-shadow: 0px 0px 15px var(--green);
 }
 .front-card img{
     width: 320px;
     height: 300px;
     object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid var(--green);
+    box-shadow: 0px 10px 10px var(--green);
 }
 /***** END ABOUT ME **********/
 
@@ -297,6 +316,7 @@ h3::after{
 .exp .expWrapper .titleExp h2{
     font-size: 40px;
     color: var(--green);
+    text-shadow: 0px 0px 15px var(--green);
 }
 .exp .expWrapper .contentExp{
     width: 100%;
@@ -306,6 +326,9 @@ h3::after{
 .exp .expWrapper .contentExp ul li{
 padding-bottom: 25px;
     list-style: disc;
+}
+.exp .expWrapper .contentExp ul li h1{
+    text-shadow: 0px 0px 15px white;
 }
 .exp .expWrapper .contentExp ul li::marker{
 
@@ -333,6 +356,7 @@ padding-bottom: 25px;
     justify-content: center;
     height: 80px;
     align-items: center;
+    text-shadow: 0px 0px 15px white;
 }
 .projetos .projetosWrapper .column-one{
     width: 100%;
@@ -435,6 +459,7 @@ align-items: center;
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
+    text-shadow: 0px 0px 15px white;
 }
 .footer .footerWrapper .titleFooter a h2{
     font-size: 30px;
