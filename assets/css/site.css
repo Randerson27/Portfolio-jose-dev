@@ -11,15 +11,14 @@
     color: white;
 }
 :root{
-    --green:#00FF7F;
+    --green:#00e0c0;
     --lightBlack:#0e0e0e;
+
+    --black:#131414;
 }
 body{
-    background: var(--lightBlack);
-}
-
-:root{
-    --black:#131414;
+    background: rgb(5,5,5);
+    background: linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(32,35,45,1) 30%);
 }
 
 .containerFull{
@@ -39,8 +38,7 @@ body{
 }
 .topHeader{
     width: 100%;
-    background-color: black;
-    border-bottom: 3px solid #0a0a0a;
+    
 }
 .topHeader .topHeaderWrapper{
     width: 100%;
@@ -66,6 +64,9 @@ body{
 }
 .topHeader .topHeaderWrapper .menu a:hover{
    text-decoration: underline;
+}
+.changeStyle{
+    background-color: var(--gray);
 }
 
 .mainFull{
@@ -104,7 +105,7 @@ body{
     max-height: 300px;
 }
 .mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect strong{
-    color: #00FF7F;
+    color: #00e0c0;
 }
 .mainFull .contentMain .contentMainWrapper .boxContent .textApresentattion .textEfect .btnContacts{
     display: flex;
@@ -178,7 +179,7 @@ h3::after{
 /******** ABOUT ME **********/
 .about{
     width: 100%;
-    background-color: black;
+    background-color: pink;
     display: flex;
     align-items: center;
 }
@@ -298,7 +299,7 @@ h3::after{
 
 /***** EXPERIÊNCIAS *********/
 .experiencias{
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid var(--gray);
 }
 .exp{
     padding: 30px 0;
@@ -314,7 +315,6 @@ h3::after{
     align-items: center;
     border-right: 2px solid red;
     max-width: 400px;
-    height: 355px;
 }
 .exp .expWrapper .titleExp h2{
     font-size: 40px;
@@ -414,7 +414,7 @@ align-items: center;
     height: 470px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 8px 8px 10px black;
+    box-shadow: 8px 8px 10px var(--green);
 }
 .swiper-pagination-bullet{
     background: white!important;
@@ -428,7 +428,7 @@ align-items: center;
 /***** FOOTER *****/
 .footer{
     width: 100%;
-    background-color: black;
+    background-color: var(--gray);
 }
 .footer .footerWrapper{
     display: flex;
@@ -456,6 +456,7 @@ align-items: center;
     width: 100%;
     object-fit: cover;
     border-radius: 150px;
+    box-shadow: 0px 10px 20px var(--green);
     height: 100%;
 }
 .footer .footerWrapper .titleFooter{
@@ -486,7 +487,7 @@ align-items: center;
     position: fixed;
     right: 5%;
     bottom: 10%;
-    border: 3px solid var(--lightBlack);
+    box-shadow: 0px 0px 15px var(--green);
     border-radius: 5px;
     width: 100%;
     max-width: 190px;
