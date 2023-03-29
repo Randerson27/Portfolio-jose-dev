@@ -179,7 +179,7 @@ h3::after{
 /******** ABOUT ME **********/
 .about{
     width: 100%;
-    background-color: var(--gray);
+    background-color: pink;
     display: flex;
     align-items: center;
 }
