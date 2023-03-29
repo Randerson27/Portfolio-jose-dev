@@ -14,7 +14,7 @@
 :root{
     --green:#00e0c0;
     --lightBlack:#0e0e0e;
-
+    --gray:#13141a;
     --black:#131414;
 }
 body{
@@ -39,7 +39,6 @@ body{
 }
 .topHeader{
     width: 100%;
-    
 }
 .topHeader .topHeaderWrapper{
     width: 100%;
@@ -180,7 +179,7 @@ h3::after{
 /******** ABOUT ME **********/
 .about{
     width: 100%;
-    background-color: pink;
+    background-color: var(--gray);
     display: flex;
     align-items: center;
 }
