@@ -28,7 +28,7 @@
 <body>
     <!-- HEADER -->
     <section class="header area-1">
-        <div class="topHeader">
+        <div class="topHeader" id="nav-top">
             <div class="containerFull">
                 <div class="containerStatic">
                     
@@ -337,8 +337,8 @@
                                 <div class="swiper-slide">
                                     <div class="boxSlide">
                                         <div class="imageSlide">
-                                            <a data-fancybox="gallery" href="assets/img/carregando-em-breve-jose-portfolio.png" target="blank">
-                                                <img src="assets/img/carregando-em-breve-jose-portfolio.png" alt="carregando-em-breve-jose-portfolio">
+                                            <a data-fancybox="gallery" href="assets/img/carregando-em-breve-2-jose-portfolio.png" target="blank">
+                                                <img src="assets/img/carregando-em-breve-2-jose-portfolio.png" alt="carregando-em-breve-2-jose-portfolio">
                                             </a>
                                         </div> 
                                         <div class="descriptionImg">
@@ -467,5 +467,17 @@
    
     </script>
 
+    <script>
+        const desiredElement = document.getElementById('nav-top'); // elemento alvo
+        const pixelsAmount = '150'; // Quantidade de pixels a contar do TOP até definir a cor
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > pixelsAmount) {
+                desiredElement.classList.add('changeStyle'); // adiciona classe "changeColor"
+            } else {
+            desiredElement.classList.remove('changeStyle'); // remove classe "changeColor"
+            }
+        });
+    </script>
 </body>
 </html>

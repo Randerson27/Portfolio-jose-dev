@@ -13,9 +13,12 @@
 :root{
     --green:#00e0c0;
     --lightBlack:#0e0e0e;
+    --gray:#13141a;
 }
 body{
-    background: var(--lightBlack);
+    /* background: var(--lightBlack); */
+    background: rgb(5,5,5);
+background: linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(32,35,45,1) 30%);
 }
 
 :root{
@@ -39,8 +42,8 @@ body{
 }
 .topHeader{
     width: 100%;
-    background-color: black;
-    border-bottom: 3px solid #0a0a0a;
+    /* background-color: black;
+    border-bottom: 3px solid #0a0a0a; */
 }
 .topHeader .topHeaderWrapper{
     width: 100%;
@@ -66,6 +69,9 @@ body{
 }
 .topHeader .topHeaderWrapper .menu a:hover{
    text-decoration: underline;
+}
+.changeStyle{
+    background-color: var(--gray);
 }
 
 .mainFull{
@@ -178,7 +184,7 @@ h3::after{
 /******** ABOUT ME **********/
 .about{
     width: 100%;
-    background-color: black;
+    background-color: var(--gray);
     display: flex;
     align-items: center;
 }
@@ -298,7 +304,7 @@ h3::after{
 
 /***** EXPERIÊNCIAS *********/
 .experiencias{
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid var(--gray);
 }
 .exp{
     padding: 30px 0;
@@ -314,7 +320,6 @@ h3::after{
     align-items: center;
     border-right: 2px solid red;
     max-width: 400px;
-/*     height: 355px; */
 }
 .exp .expWrapper .titleExp h2{
     font-size: 40px;
@@ -414,7 +419,7 @@ align-items: center;
     height: 470px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 8px 8px 10px black;
+    box-shadow: 8px 8px 10px var(--green);
 }
 .swiper-pagination-bullet{
     background: white!important;
@@ -428,7 +433,7 @@ align-items: center;
 /***** FOOTER *****/
 .footer{
     width: 100%;
-    background-color: black;
+    background-color: var(--gray);
 }
 .footer .footerWrapper{
     display: flex;
