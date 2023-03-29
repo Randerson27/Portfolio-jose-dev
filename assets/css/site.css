@@ -13,7 +13,7 @@
 :root{
     --green:#00e0c0;
     --lightBlack:#0e0e0e;
-    --gray:#13141a;
+    --gray:green;
     --black:#131414;
 }
 body{
