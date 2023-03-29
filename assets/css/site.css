@@ -14,15 +14,12 @@
     --green:#00e0c0;
     --lightBlack:#0e0e0e;
     --gray:#13141a;
+    --black:#131414;
 }
 body{
     /* background: var(--lightBlack); */
     background: rgb(5,5,5);
 background: linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(32,35,45,1) 30%);
-}
-
-:root{
-    --black:#131414;
 }
 
 .containerFull{
@@ -42,8 +39,6 @@ background: linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(32,35,45,1) 30%);
 }
 .topHeader{
     width: 100%;
-    /* background-color: black;
-    border-bottom: 3px solid #0a0a0a; */
 }
 .topHeader .topHeaderWrapper{
     width: 100%;
