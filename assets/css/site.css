@@ -18,7 +18,6 @@
     --black:#131414;
 }
 body{
-    padding: 48px 8%;
     background: rgb(5,5,5);
     background: linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(32,35,45,1) 30%);
 }
@@ -27,6 +26,7 @@ body{
     width: 100%;
 }
 .containerStatic{
+     padding: 48px 8%;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
